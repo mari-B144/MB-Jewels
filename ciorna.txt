@@ -1,0 +1,47 @@
+<iframe 
+    data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6GVU50d1RupKPHoU7bqaI6?utm_source=generator" width="33%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+  </iframe>
+
+  <iframe 
+    src="https://assets.pinterest.com/ext/embed.html?id=773985886017348960" height="470" width="345" frameborder="0" scrolling="no"   >
+  </iframe>
+
+   <p style="display:inline-block;background-color: rgb(248, 200, 234); " id="logo">
+        <img src="slash.png" width="150px">
+      </p>
+  
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

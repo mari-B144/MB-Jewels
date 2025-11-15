@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&family=Xanh+Mono:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.icon{
+  padding-top: 50px;
+  display:inline-block;
+  background-color: rgb(248, 200, 234);
+  size: 50px;;
+}
+
+.line{
+  border-bottom: 5px;
+  color:rgb(21, 8, 139);
+}
+
+header{
+  text-align: center;
+  background-color: rgb(248, 200, 234);
+  color:rgb(21, 8, 139);
+  font-family: "Ballet";
+  font-size: 121px;
+  padding-top: 15px;
+  padding-bottom: 5px;  
+}
+
+footer {  
+  text-align: center;
+  background-color: rgb(248, 200, 234);
+  color:rgb(21, 8, 139);
+  font-family: "Ballet";
+  font-size: 69px;
+ 
+  border-style: solid;
+  border-width: 10px;
+}
+
+ul.topnav {
+  text-align: center;
+  display: flow-root;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(248, 200, 234);
+  font-family: "Oxanium";
+  font-size: 15px;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  text-align: center;
+  display: flow-root;
+  color: rgb(21, 8, 139);
+  padding: 20px;
+  text-decoration: none;
+  font-family: "Oxanium";
+  font-size: 15px;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: rgb(21, 8, 139);
+  color: rgb(248, 200, 234);
+}
+
+
+
+.dropbtn {
+  background-color: rgb(248, 200, 234);
+  color: rgb(21, 8, 139);
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+  cursor:default;  
+}
+
+.dropdown {
+  text-align: center;
+  position: relative;
+  display: flow-root;
+  
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgb(248, 200, 234);
+  min-width: 160px;
+  z-index: 1;
+  left: 55%;
+  transform: translateX(-55%);
+  position: absolute;
+  
+}
+
+.dropdown-content a {
+  text-align: center;
+  color: rgb(21, 8, 139);
+  padding: 20px;
+  text-decoration: none;
+  display: flexbox;
+}
+
+.dropdown-content a:hover 
+{
+  text-align: center;
+  
+  background-color: rgb(248, 200, 234); /*bg hover menu*/
+}
+
+.dropdown:hover .dropdown-content {
+  
+  display:ruby;
+  text-align: center;
+}
+
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:50%;  
+  float:left;
+  font-family: "Oxanium";
+}
+
+#navbar {  
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(248, 200, 234);
+  padding: 15px ;
+  transition: 0.2s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99; 
+}
+
+#navbar #logo {
+  font-size: 35px;
+  }
+
+
+
+@media screen and (max-width: 200px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+}
