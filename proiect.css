@@ -15,9 +15,12 @@
   size: 50px;;
 }
 
-.line{
-  border-bottom: 5px;
-  color:rgb(21, 8, 139);
+hr.new1{
+
+  border: 5px solid rgb(21, 8, 139);
+  margin:0;
+  padding:0;
+  
 }
 
 header{
@@ -142,14 +145,8 @@ div.mycontainer div {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99; 
+  z-index: 50; 
 }
-
-#navbar #logo {
-  font-size: 35px;
-  }
-
-
 
 @media screen and (max-width: 200px) {
   #navbar {
