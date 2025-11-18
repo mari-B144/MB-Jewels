@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Monsieur+La+Doulaise&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 
 *{
     margin:0;
@@ -28,9 +29,9 @@ header{
   background-color: rgb(254, 220, 255);
   color:rgb(21, 8, 139);
   font-family: "Ballet";
-  font-size: 121px;
-  padding-top: 15px;
-  padding-bottom: 5px;  
+  font-size: 144px;
+  padding-top: 20px;
+  padding-bottom: 15px;  
 }
 
 footer {  
@@ -50,12 +51,12 @@ footer {
 a.cont{
   color: rgb(21, 8, 139);
   background-color: rgb(254, 220, 255);
-  font-style: italic;
+  
 }
 
 a.cont:hover{
   background-color: rgb(254, 220, 255);
-  font-style: italic;
+  
    color: rgb(218, 14, 17);
 }
 
@@ -145,13 +146,14 @@ ul.topnav li a:hover {
 div.mycontainer {
   width:100%;
   overflow:auto;
+  font-family: "Climate Crisis";
 }
 div.mycontainer div {
-  width:50%;  
+  width:33.33%;  
   float:left;
-  font-family: "Oxanium";
+  font-family: "Climate Crisis";
   font-size: 20px;
-  text-align: left;
+  align-items: center;
 }
 
 #navbar {  
@@ -176,7 +178,7 @@ div.container {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
-  width: 50%;
+  width: 25%;
   margin:auto;
   background-color: rgb(254, 220, 255);
 }
@@ -185,12 +187,13 @@ div.container {
 .image {
   opacity: 1;
   display: block;
-  width: 20%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   border: 5px solid rgb(21, 8, 139);
-  background-color: rgb(254, 220, 255)
+  background-color: rgb(254, 220, 255);
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
   
 }
 
@@ -208,6 +211,20 @@ div.container {
   text-align: center;
 }
 
+
+.thumbnail{
+  
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.08s;
+  transition-duration: 0.08s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease-in-out;
+}
+.thumbnail:hover {
+    transform: scale(1.03);
+}
+
 .container:hover .image {
   opacity: 0.3;
 }
@@ -215,7 +232,6 @@ div.container {
 .container:hover .middle {
   opacity: 1;
 }
-
 
 
 .row {
@@ -227,3 +243,145 @@ div.container {
   padding: 5px;
 }
 
+/* to do: transitions on hover; newsletter;  grid; check list teams; collapsable questions faq*/
+
+.textbg-header{
+  font-size: 121px;
+  font-family: "Climate Crisis";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color:rgb(21, 8, 139);
+  text-align: center;
+}
+
+.textbg-body{
+  font-size: 88px;
+  font-family: "Climate Crisis";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.background-text{
+ 
+  letter-spacing: 7px;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  background-image: url(bgr.jpg);
+  background-size: 120%;
+  
+  animation: bg-animation 30s cubic-bezier(0.3,0,0.7,1) infinite;
+}
+
+@keyframes bg-animation {
+  0% {background-position: 0% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+.textbox{
+  background-color: rgba(255, 255, 255, 0.712);
+  color:rgb(21, 8, 139);
+  font-size: 80px;
+  margin:0%;
+}
+
+.centeredftr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:rgb(21, 8, 139);
+  
+  
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+
+
+section {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.input-wrapper {
+    width: 400px;
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 20px 50px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(39, 40, 41, 0.6);
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.input-wrapper span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 10px;
+    color: rgba(39, 40, 41, 0.6);
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.input-wrapper button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 10px;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: rgba(39, 40, 41, 0.6);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.input-wrapper input:focus, 
+.input-wrapper input:valid {
+    outline: 2px solid rgba(101, 40, 247, 0.6);
+}
+
+.input-wrapper input:focus ~ span,
+.input-wrapper input:valid ~ span,
+.input-wrapper input:not(:placeholder-shown) ~ span {
+    transform: translateY(-33px);
+    font-size: 0.8rem;
+    color: rgba(101, 40, 247, 0.6);
+}
+
+.input-wrapper input:focus ~ button,
+.input-wrapper input:valid ~ button {
+    color: rgba(101, 40, 247, 0.6);
+}

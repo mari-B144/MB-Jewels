@@ -91,3 +91,36 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+ <div class="centeredftr" style="font-size: 130px;  background-color: rgba(254, 220, 255, 0.527);  color:rgb(21, 8, 139);">
+        Every diamond has a story. Dream enough to write it.<br>
+        
+      </div>
+
+  <hr class="new1">
+
+<div style="margin:auto; position: relative;  text-align: center;  color: white;">
+      <img src="ftr.png" width="83%" height="auto" style="padding-top: 88px;">
+       <div class="centeredftr">
+        <div class="textbox"> &ensp;Every diamond has a story.&ensp;</div>
+        
+        <div class="textbox">&ensp;Dream enough to write it. &ensp; </div>
+        
+      </div>
+    </div>
+    <br>
+    <div style="font-size: 50px; color:rgb(21, 8, 139);"><a href="proiect.html" class="cont">MB Jewels.</a> <p style="color: rgb(185, 24, 24); padding-bottom: 20px;"> Out of love.</p></div>
+    
+    
+ <div class="mycontainer">
+        <section>
+          <img src="logo.png" alt="" width="250px" />
+          <form action="">
+            <div class="input-wrapper">
+              <input type="text" required placeholder=" " />
+              <span>Email or Phone Number</span>
+              <button><i class="fa-regular fa-circle-right"></i></button>
+            </div>
+          </form>
+        </section>
+      </div>
