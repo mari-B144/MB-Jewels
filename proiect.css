@@ -146,12 +146,12 @@ ul.topnav li a:hover {
 div.mycontainer {
   width:100%;
   overflow:auto;
-  font-family: "Climate Crisis";
+  
 }
 div.mycontainer div {
   width:33.33%;  
   float:left;
-  font-family: "Climate Crisis";
+  padding-top: 25px;
   font-size: 20px;
   align-items: center;
 }
@@ -384,4 +384,15 @@ section {
 .input-wrapper input:focus ~ button,
 .input-wrapper input:valid ~ button {
     color: rgba(101, 40, 247, 0.6);
+}
+
+#ballet{
+  font-family: "Ballet";
+}
+#climate{
+  font-family: "Climate Crisis";
+}
+
+#review{
+  
 }
