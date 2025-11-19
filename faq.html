@@ -1,19 +1,109 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>MB Jewels</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="MB Jewels">
+  <meta name="keywords" content="jewel, bijuterie, diamante, inel">
+  <meta name="author" content="Maria, Belceanu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="icon1.png">
+  <link rel="stylesheet" href="proiect.css">
+</head>
+<body style="background-color: rgb(254, 220, 255);">
+   <header id="logo">
+    <div id="navbar"> 
+      <p style="display:inline-block; " id="logo">
+        <img src="slash.png" width="50px">
+      </p>      
+      MB&nbsp;Jewels
+      <p style="display:inline-block; " id="logo">
+        <img src="slash.png" width="50px"><hr class="new1">
+      </p>          
+    </div>
+    
+  </header>
 
-    <head>
-        <title>MB  Jewels</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="MB Jewels">
-        <meta name="keywords" content="jewel, bijuterie, diamante, inel">
-        <meta name="author" content="Maria, Belceanu">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="icon1.png">
-        <link rel="stylesheet" href="proiect.css">
-    </head>
-
-    <body>
+  <div style="padding:50px; padding-top: 300px;background-color: rgb(254, 220, 255); color:rgb(21, 8, 139); width: 70%; margin: auto;" id="xahnmono">
         
-    </body>
+        <button class="collapsible">What makes MB Jewels unique?</button>
+        <div class="content">
+        <p>At MB Jewels, we combine expert craftsmanship, ethically sourced materials, and personalized design options to create engagement rings and wedding bands that reflect your unique love story. Every piece is handcrafted with precision and care.</p>
+        </div><br>
+        <button class="collapsible">Are your diamonds ethically sourced?</button>
+        <div class="content">
+        <p>Yes. All diamonds used at MB Jewels comply with the Kimberley Process and are sourced from trusted suppliers who follow ethical and environmentally responsible mining practices.</p>
+        </div><br>
+        <button class="collapsible">Do you offer lab-grown diamonds?</button>
+           
+        <div class="content">
+            <p>Absolutely. We provide a wide selection of high-quality lab-grown diamonds that offer exceptional brilliance, beauty, and value.</p>
+        </div><br>
+        <button class="collapsible">Can I customize my ring?</button>
+           
+        <div class="content">
+            <p>Yes! MB Jewels specializes in custom design. You can choose your metal, stone shape, setting style, band width, and engraving. Our designers work with you step-by-step to bring your vision to life.</p>
+        </div><br>
+        <button class="collapsible">How long does the custom design process take?</button>
+           
+        <div class="content">
+            <p>Custom designs typically take 3–6 weeks, depending on complexity and material availability. We’ll provide a timeline estimate during your consultation.</p>
+        </div><br>
+        <button class="collapsible">What if I don’t know my ring size?</button>
+           
+        <div class="content">
+            <p>We provide a free ring sizing kit upon request, and you can also visit any MB Jewels boutique for a professional fitting. Many rings include one free resizing within the first year.</p>
+        </div><br>
+        <button class="collapsible">What metals do you offer?</button>
+           
+        <div class="content">
+            <p>Our most popular metals include:</p>
+            <ul>14k & 18k yellow gold</ul>
+            <ul>14k & 18k white gold</ul>
+            <ul>14k & 18k rose gold</ul>
+            <ul>Platinum</ul>
+            <ul>Palladium (select styles)</ul>
+        </div><br>
+        <button class="collapsible">Do you offer financing or payment plans?</button>
+           
+        <div class="content">
+            <p>Yes. MB Jewels offers flexible payment plans and financing options through trusted partners. Options will appear at checkout or can be discussed during a consultation.</p>
+        </div><br>
+
+        
+    </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+    <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+     window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "45px";
+    } else {
+        document.getElementById("navbar").style.padding = "80px 80px";
+        document.getElementById("logo").style.fontSize = "55px";
+    }
+    }
+    </script>
+</body>
 
 </html>

@@ -7,6 +7,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    
 }
 
 .icon{
@@ -24,9 +25,17 @@ hr.new1{
   
 }
 
+hr.new2{
+
+  border: 12px solid rgb(255, 255, 255);
+  margin:0;
+  padding:0;
+  
+}
+
 header{
   text-align: center;
-  background-color: rgb(254, 220, 255);
+ 
   color:rgb(21, 8, 139);
   font-family: "Ballet";
   font-size: 144px;
@@ -146,12 +155,14 @@ ul.topnav li a:hover {
 div.mycontainer {
   width:100%;
   overflow:auto;
+  padding-left:50px;
   
 }
+
 div.mycontainer div {
   width:33.33%;  
   float:left;
-  padding-top: 25px;
+  
   font-size: 20px;
   align-items: center;
 }
@@ -200,7 +211,7 @@ div.container {
 .middle {
   color:rgb(21, 8, 139);
   font-family: "Ballet";
-  font-size: 100px;;
+  font-size: 100px;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -234,16 +245,14 @@ div.container {
 }
 
 
-.row {
-  display: flex;
-}
+
 
 .column {
   flex: 33.33%;
   padding: 5px;
 }
 
-/* to do: transitions on hover; newsletter;  grid; check list teams; collapsable questions faq*/
+/* to do: transitions on hover; newsletter;  grid; check list teams; collapsable questions faq; your moments*/
 
 .textbg-header{
   font-size: 121px;
@@ -393,6 +402,230 @@ section {
   font-family: "Climate Crisis";
 }
 
-#review{
+
+
+.grid{
+   background-color: rgb(254, 220, 255);
+ 
+   display: grid;
+    grid-template-columns:repeat auto auto auto;
+    grid-template-areas:
+        "c1 c2 c3";
+    padding:10px;
+}
+
+#maps{
+  align-items: center;
+  grid-area: c1;
+  font-size: 20px;
+  font-family: "Climate Crisis";
+  overflow: hidden;
+}
+
+#newsletter{
+  align-items: center;
   
+  grid-area: c1;
+  font-size: 20px;
+  font-family: "Climate Crisis";
+}
+
+#contactinfo{
+  align-items: center;
+  grid-area: c3;
+  font-size: 20px;
+  font-family: "Climate Crisis";
+  background-color: rgb(254, 220, 255)
+}
+
+#xahnmono{
+  font-family: "Xahn Mono";
+}
+
+#submitbtn{
+  border-radius: 3px;
+  border: 5px solid rgb(21, 8, 139);
+  width:50%;
+  background-color: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+}
+
+#emailbtn{
+  border-radius: 2px;
+  border: 10px solid rgb(255, 255, 255);
+ 
+  background-color: rgb(255, 255, 255);
+  color: rgb(21, 8, 139);
+}
+
+#emailbtn:hover{
+  border: 10px solid rgb(21, 8, 139);
+  transition: ease-in-out;
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.body-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 80vh;
+    background-color: rgb(254, 220, 255);
+  }
+
+  .carousel {
+    width: 100%;
+    height:78vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-slide {
+    display: flex;
+    width: 1000%; 
+    animation: carousel-animation 20s infinite alternate; 
+  }
+
+  .carousel-slide img {
+    width: calc(100% / 10); 
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes carousel-animation {
+   
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-10%);
+    }
+    30% {
+      transform: translateX(-20%);
+    }
+    40% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(-40%);
+    }
+    60% {
+      transform: translateX(-50%);
+    }
+    70% {
+      transform: translateX(-60%);
+    }
+    80% {
+      transform: translateX(-70%);
+    }
+    90% {
+      transform: translateX(-80%);
+    }
+    100% {
+      transform: translateX(-90%);
+    }
+    
+  }
+
+  .h{
+    background-color: rgb(254, 220, 255); text-align: center; color:rgb(21, 8, 139);
+  font-family: "Ballet";
+  font-size: 88px;
+  
+  }
+
+  div.scroll-container {
+  background-color: rgb(254, 220, 255);
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+.collapsible {
+  background-color: rgb(255, 255, 255);
+  color: rgb(21, 8, 139);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 35px;
+  font-family: "Climate Crisis";
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(21, 8, 139);
+  color:rgb(254, 220, 255);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  font-size: 25px;
+  font-family: "Xahn Mono";
 }
