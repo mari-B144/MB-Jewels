@@ -1,0 +1,59 @@
+body {
+  background: #fbe1ff;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.jewelry-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 300px;
+  margin: auto;
+}
+
+.jewelry-card img {
+  width: 200px;
+  margin: 15px 0;
+}
+
+button {
+  background: #d4af37;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.favorites-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.favorite-card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  width: 180px;
+}
+
+.favorite-card img {
+  width: 100%;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: crimson;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.back-link {
+  display: block;
+  margin-top: 30px;
+}

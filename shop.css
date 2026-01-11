@@ -1,0 +1,55 @@
+.filtru {
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+#price-slider {
+  margin: 20px 0;
+}
+
+.valori {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#produse {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  border: 1.5px solid rgb(21, 8, 139);
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hero {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 8, 139);
+}
+
+#logo-text {
+  font-family: 'Ballet';
+  font-size: 144px;
+  letter-spacing: 6px;
+  
+  color:rgb(254, 220, 255);
+  white-space: nowrap;
+}
+
+body{
+    padding: 54px;
+    background-color: rgb(254, 220, 255);
+    color: rgb(21, 8, 139);
+}

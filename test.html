@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalog Bijuterii</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  .bijuterie {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .bijuterie h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .detalii {
+    padding: 5px 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="bijuterie" style="background-color: gold;">
+  <h2>Inel cu diamante</h2>
+  <button class="detalii">Vezi detalii</button>
+</div>
+
+<div class="bijuterie" style="background-color: silver;">
+  <h2>Brățară argintie</h2>
+  <button class="detalii">Vezi detalii</button>
+</div>
+
+<div class="bijuterie" style="background-color: #b5651d;">
+  <h2>Colier bronz</h2>
+  <img src="ring53.jpeg">
+  <button class="detalii">Vezi detalii</button>
+</div>
+
+<script>
+  const carduri = document.querySelectorAll('.bijuterie');
+
+  carduri.forEach(card => {
+    // Click pe card
+    card.addEventListener('click', () => {
+      alert(`Ai dat click pe cardul: ${card.querySelector('h2').textContent}`);
+    });
+
+    // Click pe butonul "Vezi detalii"
+    const btnDetalii = card.querySelector('.detalii');
+    btnDetalii.addEventListener('click', (event) => {
+      event.stopPropagation(); // oprim propagarea către card
+      const bgColor = getComputedStyle(card).backgroundColor;
+
+      if (bgColor === 'rgb(255, 215, 0)') { // gold
+        alert('Bijuterie specială de aur!');
+      } else if (bgColor === 'rgb(192, 192, 192)') { // silver
+        alert('Bijuterie elegantă de argint!');
+      } else {
+        alert('Bijuterie frumoasă, dar mai puțin prețioasă.');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

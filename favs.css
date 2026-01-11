@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(254, 220, 255);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  padding: 10px;
+}
+
+.item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+}
+
+/* Buton favourite */
+.fav-btn {
+  margin-top: 8px;
+  background: none;
+  border: 2px solid rgb(21, 8, 139);
+  color: #2b1a8a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 21px;
+  font-family: "Climate Crisis";
+   transition: all 0.3s ease;
+}
+
+.fav-btn:hover {
+  background: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+}
+
+/* HIGHLIGHT: favorit deja salvat */
+.fav-btn:active{
+  background: rgb(21, 8, 139);
+  color: rgb(97, 4, 4);
+  
+}
+
+/* animație elegantă la click */
+.fav-btn:animate {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.favorites-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite-card {
+  width: 180px;
+  background: rgb(21, 8, 139);
+  padding: 12px;
+  border-radius: 14px;
+  border: 2px solid rgb(21, 8, 139);
+  text-align: center;
+}
+
+.favorite-card img {
+  width: 100%;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: rgb(254, 220, 255);
+  cursor: pointer;
+  font-family: "Climate Crisis";
+  font-size: 18px;
+}
+.remove-btn:hover{
+    color:rgb(128, 0, 11);
+}
+
+hr.new1{
+
+  border: 2px solid rgb(21, 8, 139);
+  margin:0;
+  padding:0;
+  
+}
+#navbar {  
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(254, 220, 255);
+  padding: 15px ;
+  transition: 0.2s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50; 
+}
+
+header{
+  text-align: center;
+ 
+  color:rgb(21, 8, 139);
+  font-family: "Ballet";
+  font-size: 144px;
+  padding-top: 20px;
+  padding-bottom: 15px;  
+}

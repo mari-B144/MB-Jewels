@@ -10,67 +10,101 @@
   <meta name="keywords" content="jewel, bijuterie, diamante, inel">
   <meta name="author" content="Maria, Belceanu">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="icon1.png">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="proiect.css">
-
+ 
+  <script src="proiect.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <header id="logo">
     <div id="navbar"> 
-      <p style="display:inline-block;background-color: rgb(254, 220, 255); " id="logo">
-        <img src="slash.png" width="50px">
+      <p style="display:inline-block;background-color: rgb(254, 220, 255); ">
+        <img src="slash.png" width="50px" alt="slash1">
       </p>      
       MB&nbsp;Jewels
-      <p style="display:inline-block;background-color: rgb(254, 220, 255); " id="logo">
-        <img src="slash.png" width="50px"><hr class="new1">
+      <p style="display:inline-block;background-color: rgb(254, 220, 255); ">
+        <img src="slash.png" width="50px" alt="slash2"><hr class="new1">
       </p>          
     </div>
     
   </header>
   
-  
-  
-  <ul class="topnav">
+ <div class="bgmenu">
 
-    <div style="padding-top: 256px; background-color: rgb(254, 220, 255);";>
-      <li><a href="proiect.html">Home</a></li>
-      <li><a href="about-me.html">About</a></li>
-      <li><a href="inspo.html">Inspo</a></li>
-      <li><a href="wed-rings.html">Wedding rings</a></li>
-      <li>
-        <div class="dropdown"> 
-        
-          <a class="dropbtn">Engagement rings</a>
-          <div class="dropdown-content">
-            <a href="engOVAL.html">Oval</a>
-            <a href="engPEAR.html">Pear</a>
-            <a href="engCUSHION.html">Cushion</a>
-            <a href="engROUND.html">Round</a>
-            <a href="engRAD.html">Radiant</a>
-            <a href="engTEM.html">Toi Et Moi</a>
-            <a href="eng-ringsALL.html">All</a>
-          </div>
-        </div>
-      </li>
-    </div>
-  </ul>
-
-  
-  
-
-  <div style="background-color: rgb(254, 220, 255);">
+  <button class="menu-toggle" id="menuToggle">
+    ☰ <span>MENU</span>
     
-    <div class="container">
-      <img src="homepg.jpg" alt="ourstory" class="image" style="width:100%;">
-      <div class="middle">
-        <div class="text">Our Story</div>
+  </button>
+
+  
+
+  <nav class="menu" id="menu">
+
+    <a href="about-me.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="inspo.html">Inspo</a>
+    <a href="shop.html">Shop</a>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Rings ▾</button>
+
+      <div class="submenu horizontal">
+        <a href="engOVAL.html">Oval</a>
+        <a href="engPEAR.html">Pear</a>
+        <a href="engROUND.html">Round</a>
+        <a href="engRAD.html">Radiant</a>
+        <a href="engTEM.html">Toi Et Moi</a>
+        <a href="eng-ringsALL.html">All engagement</a>
+        <a href="wed-rings.html">Wedding bands</a>
       </div>
     </div>
+
+  </nav>
+</div>
+
+<div class="bgacc">
+  <button class="menu-toggle account-btn" onclick="window.location.href='login.html'">
+  <span>Account</span>
+  </button>
+</div>
+
+<div class="bgacc">
+  <button class="menu-toggle account-btn" onclick="window.location.href='favs.html'">
+  <span>Favourites</span>
+  </button>
+</div>
+  
+
+  <div class="gallery" id="bodyhomepic">
+
+    <a href="inspo.html" class="image-link">
+      <div class="image-container">
+          <img src="download (34).jpeg" alt="Inspo">
+          <div class="overlay">
+          <span>Inspo</span>
+          </div>
+      </div>
+    </a>
+
+    <a href="about-me.html" class="image-link">
+      <div class="image-container">
+          <img src="pozaalt.jpg" alt="Our Story">
+          <div class="overlay">
+          <span>Our Story</span>
+          </div>
+      </div>
+    </a>
+
   </div>
 
-  <div class="h">Our diamonds, your story...</div>
+ 
+
+  <div class="h" >Our diamonds, your story...</div>
   <div class="body-carousel" style="background-color: rgb(254, 220, 255);">
     <div class="carousel" style="background-color: rgb(254, 220, 255);">
       <div class="carousel-slide"> 
@@ -91,37 +125,41 @@
  
   </div>
 
-  <div class="h">Get inspo</div>
-  <div class="scroll-container">
-    <img src="ym30.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym25.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym31.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym9.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym16.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym15.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym6.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym13.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym19.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym18.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym3.jpg" alt="Image 2" width="400" height="200">
-    <img src="ym10.jpg" alt="Image 2" width="400" height="200">
-  </div>
+ 
+
   
+ <div style="background-color: rgb(254, 220, 255);" id="bodyhomepic">
+
+    <div style="background-color: rgb(254, 220, 255);">  
+      <canvas id="ringCanvas" width="500" height="500"></canvas>
+    </div>
+    <div id="jewelry" tabindex="0">
+      <h1 id="type">Engagement &nbsp; Rings</h1>
+
+      <!-- Imaginea care se schimbă la click -->
+      <img 
+      id="jewelImg" 
+      src="ring7.jpg" 
+      alt="Bijuterie"
+      >
+
+      <p style="padding-top: 20px;">Click to change image</p>
+      <p>Try clicking 1 or 2</p>
+    </div>
+  
+
 
   <div style=" background-color: rgb(254, 220, 255);">
     <div class="background-text">
-        <p class="textbg-header" style="padding: 25px; padding-top: 55px;">
+        <p class="textbg-header" style=" padding: 80px;">
           ART WITH SOUL.
           
         </p>
   </div>
-    <p class="textbg-body" style="color: rgb(21, 8, 139); text-align: center; padding-top: 120px;">Every diamond has a story. </p>
-  <div style=" background-color: rgb(254, 220, 255); padding: 50px;">
-    <div class="background-text">
-      <p class="textbg-body" style="padding-bottom: 70px;">Dream enough to write it.</p>
-    </div>
   </div>
-  <hr class="new2"><br><br><br>
+  </div>
+  
+  
   
 
   <footer>
@@ -135,56 +173,70 @@
       </div>
 
       <div id="contactinfo">
-        <header style="font-size: 50px;" id="climate">
+        <p style="font-size: 50px;" class="headerftr">
         Contact/<br>Socials
-        </header>
+        </p>
         <br>
         <p>
-          <a class="cont" id="climatecrisis" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmTgNFRkNbwCqbpmSGPZjGfFPFNcCzxTjPRRqhtjMChSwKpZnxGNvxfKrrgjRFsPJDPxrq" >Email</a>
+          <a class="cont"  href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmTgNFRkNbwCqbpmSGPZjGfFPFNcCzxTjPRRqhtjMChSwKpZnxGNvxfKrrgjRFsPJDPxrq" >Email</a>
         </p>
         
         <p>
-          <a class="cont" id="climatecrisis" href="https://www.instagram.com/aglassofcats/">Instagram</a> 
+          <a class="cont" href="https://www.instagram.com/aglassofcats/">Instagram</a> 
         </p>
         
         <p>
-          <a class="cont" id="climatecrisis" href="https://ca.pinterest.com/mariablcn/">Pinterest</a>
+          <a class="cont"  href="https://ca.pinterest.com/mariablcn/">Pinterest</a>
         </p>
         
         <p>
-          <a class="cont" id="climatecrisis" href="faq.html">FAQ</a>
+          <a class="cont"  href="faq.html">FAQ</a>
         </p>
         <br><br>
         
       </div>
 
-      <div class="grid" id="div_id" style="background-color: rgb(254, 220, 255);">
-        
-        <form action="#div_id" id="newsletter">
-          <header style="font-size: 50px;" id="climate">
-           Newsletter
-          </header>
-          <p id="xahnmono">I would like to hear about:</p><br>
-          <div id="xahnmono" style="display: inline-block;">
-            
-            <input type="checkbox" id="nl2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Jemstone & Diamond Auctions</label><br>
-            <input type="checkbox" id="nl3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Events</label><br>
-            <input type="checkbox" id="nl4" name="vehicle4" value="Jem">
-            <label for="vehicle4"> Sales</label><br><br>
-            <label for="fname">Keep up with us! Enter your email adress:</label><br><br>
-            <input type="text" id="emailbtn" name="fname"><br><br>
-            <input type="submit" value="Submit" id="submitbtn">
+      <section class="newsletter">
+        <h2>Newsletter</h2>
+
+        <form id="newsletterForm">
+          <div class="checkboxes">
+            <label>
+              <input type="checkbox" name="interest" value="Gemstone & Diamond Auctions">
+              Gemstone & Diamond Auctions
+            </label>
+
+            <label>
+              <input type="checkbox" name="interest" value="Events">
+              Events
+            </label>
+
+            <label>
+              <input type="checkbox" name="interest" value="Sales">
+              Sales
+            </label>
           </div>
 
-        </form>
-       
-      </div>
+          <p>Keep up with us!</p>
 
-     
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email address"
+          >
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>    
 
     </div>
+
+    <p class="textbg-body" style="background-color: rgb(254, 220, 255); color: rgb(21, 8, 139); text-align: center; padding-top: 100px;">Every diamond has a story. </p>
+  <div style=" background-color: rgb(254, 220, 255); padding-top: 50px;">
+    <div class="background-text">
+      <p class="textbg-body" style="padding-bottom: 70px;">Dream enough to write it.</p>
+    </div>
+  </div>
 
   </footer>
 
@@ -201,7 +253,7 @@
         document.getElementById("logo").style.fontSize = "55px";
     }
     }
-    </script>
+  </script>
 
 </body>
 

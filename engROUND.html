@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>MB Jewels</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="MB Jewels">
+  <meta name="keywords" content="jewel, bijuterie, diamante, inel">
+  <meta name="author" content="Maria, Belceanu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="proiect.css">
+</head>
+<body>
+   <header id="logo">
+    <div id="navbar"> 
+      <p style="display:inline-block; " id="logo">
+        <img src="slash.png" width="50px">
+      </p>      
+      MB&nbsp;Jewels
+      <p style="display:inline-block; " id="logo">
+        <img src="slash.png" width="50px"><hr class="new1">
+      </p>          
+    </div>
+    
+  </header>
 
-    <head>
-        <title>MB  Jewels</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="MB Jewels">
-        <meta name="keywords" content="jewel, bijuterie, diamante, inel">
-        <meta name="author" content="Maria, Belceanu">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="icon1.png">
-        <link rel="stylesheet" href="proiect.css">
-    </head>
+    <div class="row" style="padding-top: 250px; background-color: rgb(254, 220, 255);"> 
+        <div class="column" >
+            <img src="ring8.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="ring6.jpg" style="width:100%">
+            
+        </div>  
+        <div class="column">
+            <img src="ring45.jpg" style="width:100%">
+            
+        </div>
+        <div class="column">
+            <img src="ring46.jpg" style="width:100%">
+            
+        </div>
+    </div>
 
-    <body>
-        
-    </body>
+    <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+     window.onscroll = function() {scrollFunction()};
 
-</html>
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "45px";
+    } else {
+        document.getElementById("navbar").style.padding = "80px 80px";
+        document.getElementById("logo").style.fontSize = "55px";
+    }
+    }
+    </script>
+</body>

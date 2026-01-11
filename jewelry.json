@@ -1,0 +1,29 @@
+[
+  { "name": "Ring 2", "image": "ring2.jpg", "column": 0 },
+  { "name": "Ring 3", "image": "ring3.jpg", "column": 0 },
+  { "name": "Ring 4", "image": "ring4.jpg", "column": 0 },
+  { "name": "Ring 42", "image": "ring42.jpg", "column": 0 },
+  { "name": "Ring 8", "image": "ring8.jpg", "column": 0 },
+  { "name": "Ring 18", "image": "ring18.jpg", "column": 0 },
+
+  { "name": "Ring 6", "image": "ring6.jpeg", "column": 1 },
+  { "name": "Ring 9", "image": "ring9.jpg", "column": 1 },
+  { "name": "Ring 12", "image": "ring12.jpg", "column": 1 },
+  { "name": "Ring 14", "image": "ring14.jpg", "column": 1 },
+  { "name": "Ring 13", "image": "ring13.jpg", "column": 1 },
+  { "name": "Ring 10", "image": "ring10.jpg", "column": 1 },
+
+  { "name": "Ring 19", "image": "ring19.jpg", "column": 2 },
+  { "name": "Ring 20", "image": "ring20.jpg", "column": 2 },
+  { "name": "Ring 21", "image": "ring21.jpg", "column": 2 },
+  { "name": "Ring 22", "image": "ring22.jpg", "column": 2 },
+  { "name": "Ring 23", "image": "ring23.jpg", "column": 2 },
+  { "name": "Ring 25", "image": "ring25.jpg", "column": 2 },
+
+  { "name": "Ring 51", "image": "ring51.jpeg", "column": 3 },
+  { "name": "Ring 52", "image": "ring52.jpeg", "column": 3 },
+  { "name": "Ring 53", "image": "ring53.jpeg", "column": 3 },
+  { "name": "Ring 1", "image": "ring1.jpg", "column": 3 },
+  { "name": "Ring 37", "image": "ring37.jpg", "column": 3 },
+  { "name": "Ring 15", "image": "ring15.jpg", "column": 3 }
+]

@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&family=Xanh+Mono:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .icon{
@@ -27,7 +27,7 @@ hr.new1{
 
 hr.new2{
 
-  border: 12px solid rgb(255, 255, 255);
+  border: 12px solid rgb(21, 8, 139);
   margin:0;
   padding:0;
   
@@ -42,6 +42,17 @@ header{
   padding-top: 20px;
   padding-bottom: 15px;  
 }
+
+.headerftr{
+  text-align: center;
+ 
+  color:rgb(21, 8, 139);
+  
+  font-size: 144px;
+  padding-top: 20px;
+  padding-bottom: 15px;  
+}
+
 
 footer {  
   background-color: rgb(254, 220, 255);
@@ -252,7 +263,7 @@ div.container {
   padding: 5px;
 }
 
-/* to do: transitions on hover; newsletter;  grid; check list teams; collapsable questions faq; your moments*/
+/* to do: check list teams; */
 
 .textbg-header{
   font-size: 121px;
@@ -266,7 +277,7 @@ div.container {
 }
 
 .textbg-body{
-  font-size: 88px;
+  font-size: 50px;
   font-family: "Climate Crisis";
   display: flex;
   align-items: center;
@@ -422,13 +433,56 @@ section {
   overflow: hidden;
 }
 
-#newsletter{
-  align-items: center;
-  
-  grid-area: c1;
+.newsletter {
+  background: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+  letter-spacing: 2px;
+  max-width: 450px;
+  margin: auto;
+  border-radius: 20px;
+  text-align: center;
+  grid-area: c2;
   font-size: 20px;
-  font-family: "Climate Crisis";
+  font-family: "Playfair Display";
 }
+
+.newsletter h2 {
+  margin-bottom: 20px;
+  font-family: "Climate Crisis";
+  font-size: 44px;
+}
+
+.checkboxes {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.checkboxes label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.newsletter input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-family: "Playfair Display";
+  color:rgb(21, 8, 139);
+}
+
+.newsletter button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(254, 220, 255);
+  color:rgb(21, 8, 139);
+  cursor: pointer;
+  font-family: "Playfair Display";
+}
+
 
 #contactinfo{
   align-items: center;
@@ -439,8 +493,9 @@ section {
 }
 
 #xahnmono{
-  font-family: "Xahn Mono";
+  font-family: "Playfair Display";
 }
+
 
 #submitbtn{
   border-radius: 3px;
@@ -580,6 +635,12 @@ section {
   
   }
 
+  .hdr{
+     background-color: rgb(254, 220, 255); text-align: center; color:rgb(21, 8, 139);
+  font-family: "Climate Crisis";
+  font-size: 88px;
+  }
+
   div.scroll-container {
   background-color: rgb(254, 220, 255);
   overflow: auto;
@@ -629,3 +690,283 @@ div.scroll-container img {
   font-size: 25px;
   font-family: "Xahn Mono";
 }
+
+.filtru {
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+
+
+#price-slider {
+  margin: 20px 0;
+}
+
+.valori {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#produse {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+#jewelry {
+  width: 500px;        
+  min-height: 450px;    
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  border: 3px solid #d4af37; 
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Playfair Display";
+  color: rgb(21, 8, 139);
+  background-color: rgb(254, 220, 255);
+}
+
+#jewelry h1{
+  font-family: "Ballet";
+  font-size: 50px;
+}
+
+
+#jewelImg {
+  width: 220px;
+  height: auto;
+  transition: transform 0.3s;
+  margin-top: 20px; 
+}
+
+#jewelry:hover #jewelImg {
+  transform: scale(1.1);
+}
+
+.bgacc {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(254, 220, 255);  
+}
+
+.acc-toggle {
+  font-size: 28px;
+  padding: 14px 30px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+  font-family: "Climate Crisis";
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.acc-toggle:hover{
+  color: rgb(197, 161, 1);
+}
+
+
+.bgmenu {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(254, 220, 255);
+  color: rgb(21, 8, 139);
+}
+
+/* Buton mare MENU */
+.menu-toggle {
+  font-size: 28px;
+  padding: 14px 30px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+  font-family: "Climate Crisis";
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+ 
+  color: rgb(197, 161, 1);
+}
+
+/* ===== MENIU PRINCIPAL ===== */
+.menu {
+  margin-top: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.menu.show {
+  display: flex;
+}
+
+/* ===== ITEM MENIU = BOX ===== */
+.menu a,
+.dropdown-toggle {
+  padding: 12px 28px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: rgb(254, 220, 255);
+  border-radius: 30px;
+  font-size:20px;
+  text-decoration: none;
+  color: rgb(21, 8, 139);
+  background: rgb(254, 220, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Playfair Display";
+}
+
+/* HOVER – INVERSARE CULORI */
+.menu a:hover,
+.dropdown-toggle:hover {
+  background: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+}
+
+/* ===== DROPDOWN CONTAINER ===== */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== SUBMENIU ORIZONTAL ===== */
+.submenu {
+  display: none;
+  margin-top: 30px;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* activ */
+.submenu.show {
+  display: flex;
+}
+
+/* ===== SUBMENU ITEMS ===== */
+.submenu a {
+  padding: 10px 20px;
+  
+  border-radius: 22px;
+  
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rgb(21, 8, 139);
+  color: rgb(254, 220, 255);
+  transition: all 0.3s ease;
+}
+
+/* hover submenu */
+.submenu a:hover {
+  color: rgb(21, 8, 139);
+  background-color: rgb(254, 220, 255);
+}
+
+
+.bg{
+  background: rgb(254, 220, 255);
+  
+}
+
+#bodyhomepic {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(254, 220, 255);
+  font-family: "Ballet";
+}
+
+/* Container poze */
+.gallery {
+  display: flex;
+  gap: 40px; /* spațiu între poze */
+}
+
+/* Link */
+.image-link {
+  text-decoration: none;
+}
+
+/* Container imagine */
+.image-container {
+  position: relative;
+  width: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Imagine */
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(254, 220, 255,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Text */
+.overlay span {
+  font-size: 60px;
+  color: rgb(21, 8, 139);
+  letter-spacing: 2px;
+}
+
+/* Hover */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+
