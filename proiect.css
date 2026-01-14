@@ -10,6 +10,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
 .icon{
   padding-top: 50px;
   display:inline-block;
@@ -417,7 +426,7 @@ section {
 
 .grid{
    background-color: rgb(254, 220, 255);
- 
+  padding: 50px;
    display: grid;
     grid-template-columns:repeat auto auto auto;
     grid-template-areas:
@@ -967,6 +976,13 @@ div.scroll-container img {
 
 .image-container:hover img {
   transform: scale(1.05);
+}
+
+.copyright{
+  font-size: 15px;
+  color: rgb(21, 8, 139);
+  background-color: rgb(254, 220, 255);
+  font-family: "Playfair Display";
 }
 
 

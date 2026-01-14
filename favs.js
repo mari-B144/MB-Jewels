@@ -12,7 +12,6 @@ function render() {
 
     card.innerHTML = `
       <img src="${item.image}">
-      
       <button class="remove-btn">Remove</button>
     `;
 

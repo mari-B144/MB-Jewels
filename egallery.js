@@ -22,15 +22,29 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.textContent = "✓ Added";
         }
 
-        btn.addEventListener("click", () => {
+        // ⭐ CLICK PE FAVORITE
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation(); // ⭐ AICI folosim stopPropagation
+
           if (!favorites.some(f => f.name === item.name)) {
-            favorites.push({ name: item.name, image: item.image });
+            favorites.push({
+              name: item.name,
+              image: item.image
+            });
+
             localStorage.setItem("favorites", JSON.stringify(favorites));
             btn.textContent = "✓ Added";
           }
+        });
+
+        // (OPȚIONAL) click pe card
+        div.addEventListener("click", () => {
+          console.log("Clicked on item:", item.name);
+          // window.location.href = "product.html";
         });
 
         columns[item.column].appendChild(div);
       });
     });
 });
+
